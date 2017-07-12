@@ -26,23 +26,14 @@ db.userNames = require('../models/userNames.js')(sequelize, Sequelize);
 db.userProfiles = require('../models/userProfiles.js')(sequelize, Sequelize);
 
 //Relations
-db.userProfiles.belongsTo(db.userNames, {
-  as: 'user',
-  // foriegnKey: {
-  //   name: 'user_id',
-  //   allowNull: false
-  // }
-});
+// db.userProfiles.belongsTo(db.userNames);
 // // User.hasMany(Picture, {
 // //   foreignKey: {
 // //     name: 'uid',
 // //     allowNull: false
 // //   }
 // // })
-
-// db.userNames.hasMany(db.userProfiles, { as: 'profiles' });
-
-
+db.userNames.hasMany(db.userProfiles);
 // db.userNames.hasMany(db.userProfiles, {
 //   foriegnKey: {
 //     name: 'user_id',

@@ -7,10 +7,10 @@ module.exports = (sequelize, DataTypes) => {
     user_status: {
       type: DataTypes.INTEGER
     },
-    user: {
-      type: DataTypes.STRING,
-      allowNull: false
-    },
+    // user_id: {
+    //   type: DataTypes.STRING,
+    //   primaryKey: true
+    // },
     email: {
       type: DataTypes.STRING
     }
