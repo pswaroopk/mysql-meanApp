@@ -1,4 +1,5 @@
-user_profile:
+https://sequelpro.com/download
+#user_profile:
 
 CREATE TABLE `user_profile` (
   `device_uuid` varchar(64) NOT NULL,
