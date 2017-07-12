@@ -1,21 +1,23 @@
 {
-  "name": "console-admin",
+  "name": "sequelize_associations_post",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "description": "\"Code to accompany Sequelize Associations blog post\"",
+  "main": "index.js",
   "scripts": {
-    "start": "node bin/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon index.js"
   },
-  "author": "swaroop",
+  "author": "Loren Stewart",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.17.2",
-    "express": "^4.15.3",
-    "morgan": "^1.8.2",
+    "body-parser": "1.15.2",
+    "express": "4.14.0",
+    "morgan": "1.7.0",
+    "mysql": "^2.13.0",
     "mysql2": "^1.3.5",
-    "sequelize": "^4.3.0",
-    "sequelize-cli": "^2.7.0",
-    "serve-favicon": "^2.4.3"
+    "sequelize": "3.24.1",
+    "sequelize-cli": "^2.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "1.10.2"
   }
 }
